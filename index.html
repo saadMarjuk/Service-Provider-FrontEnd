@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <style>
+      /* General Styling */
+      body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #282e34;
+        color: #fff;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .navbar .logo img {
+        width: 50px;
+      }
+      .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .navbar .nav-links li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+      }
+      .navbar .nav-links li a:hover {
+        color: #00b894;
+      }
+
+      /* Parallax Sections */
+      .pimg1,
+      .pimg2,
+      .pimg3 {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .pimg1 {
+        background-image: url('car-wash.jpg');
+        min-height: 100vh;
+      }
+      .pimg2 {
+        background-image: url('cleaning.jpg');
+        min-height: 400px;
+      }
+      .pimg3 {
+        background-image: url('man-with-cam.jpg');
+        min-height: 400px;
+      }
+
+      .ptext {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+      .textBg {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      /* Section Styling */
+      .section {
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .section-light {
+        background-color: #f4f4f4;
+        color: #666;
+      }
+      .section-dark {
+        background-color: #282e34;
+        color: #ddd;
+      }
+
+      /* Footer Styling */
+      .footer {
+        background-color: #282e34;
+        color: #fff;
+        padding: 20px 40px;
+      }
+      .footer .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .footer h3 {
+        border-bottom: 2px solid #00b894;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+      .footer ul li {
+        margin-bottom: 5px;
+      }
+      .footer ul li a {
+        text-decoration: none;
+        color: #ddd;
+      }
+      .footer ul li a:hover {
+        color: #00b894;
+      }
+      .footer .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+      .footer img {
+        width: 120px;
+      }
+
+      /* Navbar Links Styling */
+      nav {
+        background-color: #3a3f44;
+        padding: 10px 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      nav ul li {
+        margin: 0;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        transition: background 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        background-color: #808b97;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="providers.html">Providers</a></li>
+        <li><a href="create-service.html">Create Service</a></li>
+        <li><a href="delete-service.html">Delete Service</a></li>
+        <li><a href="service-dashboard.html">Service Dashboard</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="logout.html">Logout</a></li>
+        <li><a href="admin-login.html">Admin</a></li>
+      </ul>
+    </nav>
+
+    <!-- Parallax Sections -->
+    <section id="home" class="pimg1">
+      <div class="ptext">
+        <span class="textBg"> Welcome to Our Website </span>
+      </div>
+    </section>
+    <section class="section section-light">
+      <h2 id="about">About Us</h2>
+      <p>We are committed to delivering quality services that enhance your life.</p>
+    </section>
+    <section id="services" class="pimg2">
+      <div class="ptext">
+        <span class="textBg"> Our Services </span>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <h2>What We Do</h2>
+      <p>From internet services to development, we offer a wide range of solutions.</p>
+    </section>
+    <section id="payments" class="pimg3">
+      <div class="ptext">
+        <span class="textBg"> Easy Payments </span>
+      </div>
+    </section>
+    <section class="section section-dark">
+      <h2 id="contact">Contact Us</h2>
+      <p>Feel free to reach out to us for any inquiries or support.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>Amber IT Ltd. Navana Tower (7th Floor)</p>
+          <p>45 Gulshan South C/A, Circle-1</p>
+          <p>Tel: (8802) 222264415</p>
+          <p>Email: info@amberit.com.bd</p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home Internet</a></li>
+            <li><a href="#">Corporate Internet</a></li>
+            <li><a href="#">Coverage Area</a></li>
+            <li><a href="#">Hosting & Development</a></li>
+          </ul>
+        </div>
+        <div class="certification">
+          <h3>ISO Certified</h3>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Amber IT. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

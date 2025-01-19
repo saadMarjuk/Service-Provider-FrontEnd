@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Dashboard</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #121212;
+      color: #f5f5f5;
+      padding-top: 60px;
+    }
+
+    /* Navbar Styles */
+    nav {
+      width: 100%;
+      background: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 10px 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: center; /* Centers the menu items */
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px;
+      transition: color 0.3s ease;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      color: #007bff; /* Change color on hover */
+    }
+
+    /* Service Dashboard Styles */
+    .dashboard-container {
+      padding: 20px;
+      margin-top: 80px; /* Ensure the content is below the navbar */
+    }
+
+    .chart-container {
+      background: #333;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .bar {
+      width: 100%;
+      height: 30px;
+      margin: 10px 0;
+      background-color: #444;
+      border-radius: 8px;
+    }
+
+    .bar div {
+      height: 100%;
+      border-radius: 8px;
+    }
+
+    /* Color Bars */
+    .service-1 {
+      background-color: #007bff;
+    }
+
+    .service-2 {
+      background-color: #28a745;
+    }
+
+    .service-3 {
+      background-color: #ffc107;
+    }
+
+    .service-4 {
+      background-color: #dc3545;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="providers.html">Providers</a></li>
+      <li><a href="create-service.html">Create Service</a></li>
+      <li><a href="delete-service.html">Delete Service</a></li>
+      <li><a href="service-dashboard.html">Service Dashboard</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="logout.html">Logout</a></li>
+      <li><a href="admin-login.html">Admin</a></li>
+    </ul>
+  </nav>
+
+  <div class="dashboard-container">
+    <h1>Service Dashboard</h1>
+
+    <div class="chart-container">
+      <h3>Service Usage Stats</h3>
+
+      <div class="bar">
+        <div class="service-1" style="width: 80%;"></div>
+      </div>
+      <p>Service 1 (80%)</p>
+
+      <div class="bar">
+        <div class="service-2" style="width: 60%;"></div>
+      </div>
+      <p>Service 2 (60%)</p>
+
+      <div class="bar">
+        <div class="service-3" style="width: 40%;"></div>
+      </div>
+      <p>Service 3 (40%)</p>
+
+      <div class="bar">
+        <div class="service-4" style="width: 20%;"></div>
+      </div>
+      <p>Service 4 (20%)</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Provider List</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background-color: #000; /* Changed navbar to black */
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #444; /* Slightly lighter black on hover */
+    }
+
+    /* Container and Card Styles */
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .provider-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .provider-card img {
+      max-width: 150px;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .provider-info {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .provider-info h2 {
+      margin: 0 0 10px;
+      color: #007bff;
+    }
+
+    .provider-info p {
+      margin: 5px 0;
+    }
+
+    .provider-info .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    .provider-actions {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .provider-actions a,
+    .provider-actions button {
+      margin: 5px 0;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .provider-actions a:hover,
+    .provider-actions button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Static Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="providers.html">Providers</a></li>
+      <li><a href="create-service.html">Create Service</a></li>
+      <li><a href="delete-service.html">Delete Service</a></li>
+      <li><a href="service-dashboard.html">Service Dashboard</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="logout.html">Logout</a></li>
+      <li><a href="admin-login.html">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- Providers List -->
+  <div class="container">
+    <h1>Providers</h1>
+
+    <!-- Provider 1 -->
+    <div class="provider-card">
+      <img src="unknown-person.png" alt="Provider 1">
+      <div class="provider-info">
+        <h2>Provider 1</h2>
+        <p>High-quality cleaning services for residential and commercial spaces.</p>
+        <p class="price">$120</p>
+        <p>Discount: 15%</p>
+        <p>Person Name: Alice Johnson</p>
+        <p>Area: Midtown</p>
+      </div>
+      <div class="provider-actions">
+        <a href="#">Free Shipping</a>
+        <a href="#">View Details</a>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Provider 2 -->
+    <div class="provider-card">
+      <img src="unknown-person.png" alt="Provider 2">
+      <div class="provider-info">
+        <h2>Provider 2</h2>
+        <p>Experienced landscapers to design and maintain your garden.</p>
+        <p class="price">$200</p>
+        <p>Discount: 20%</p>
+        <p>Person Name: Bob Smith</p>
+        <p>Area: Uptown</p>
+      </div>
+      <div class="provider-actions">
+        <a href="#">Free Shipping</a>
+        <a href="#">View Details</a>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Provider 3 -->
+    <div class="provider-card">
+      <img src="unknown-person.png" alt="Provider 3">
+      <div class="provider-info">
+        <h2>Provider 3</h2>
+        <p>Expert home repair services, from plumbing to electrical work.</p>
+        <p class="price">$150</p>
+        <p>Discount: 10%</p>
+        <p>Person Name: Charlie Brown</p>
+        <p>Area: Downtown</p>
+      </div>
+      <div class="provider-actions">
+        <a href="#">Free Shipping</a>
+        <a href="#">View Details</a>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Provider 4 -->
+    <div class="provider-card">
+      <img src="unknown-person.png" alt="Provider 4">
+      <div class="provider-info">
+        <h2>Provider 4</h2>
+        <p>Professional car washing services at your convenience.</p>
+        <p class="price">$50</p>
+        <p>Discount: 5%</p>
+        <p>Person Name: Diane Miller</p>
+        <p>Area: Suburbs</p>
+      </div>
+      <div class="provider-actions">
+        <a href="#">Free Shipping</a>
+        <a href="#">View Details</a>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Provider 5 -->
+    <div class="provider-card">
+      <img src="unknown-person.png" alt="Provider 5">
+      <div class="provider-info">
+        <h2>Provider 5</h2>
+        <p>Pet grooming services to keep your furry friends happy and clean.</p>
+        <p class="price">$80</p>
+        <p>Discount: 25%</p>
+        <p>Person Name: Emma Davis</p>
+        <p>Area: Central City</p>
+      </div>
+      <div class="provider-actions">
+        <a href="#">Free Shipping</a>
+        <a href="#">View Details</a>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
